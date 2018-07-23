@@ -83,4 +83,11 @@ classdef ultraS < coeffsDiscretization
         
     end
     
+    methods 
+                
+        % Linear solver for ultraS discretizations: 
+        [x, disc] = mldivide(disc, M, b)
+        
+    end
+    
 end
